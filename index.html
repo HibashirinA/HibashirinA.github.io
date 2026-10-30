@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hiba Shirin A | Portfolio</title>
+<meta name="description" content="Portfolio of Hiba Shirin A, third-year Computer Science student.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1f4d;--indigo:#2b3fd1;--teal:#14b8a6;--bg:#f4f7fc;--card:#fff;--ink:#16213a;--muted:#5b6785;--line:#dde4f2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:Poppins,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:var(--indigo);text-decoration:none}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,31,77,.95);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+nav b{color:#fff;font-weight:600}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+nav a{color:#c9d5f5;font-size:.9rem}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,var(--navy),#1b2f8f 60%,#1f6fb0);color:#fff;padding:72px 0 80px}
+.hero .wrap{display:flex;gap:44px;align-items:center;flex-wrap:wrap}
+.avatar{width:150px;height:150px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#5eead4);color:var(--navy);display:grid;place-items:center;font-size:3.2rem;font-weight:700;border:5px solid rgba(255,255,255,.25);flex:none}
+.hero h1{font-size:clamp(2.1rem,6vw,3.2rem);line-height:1.15;margin:0 0 10px}
+.hero p{margin:0 0 22px;color:#d6e0fa;max-width:34em;font-size:1.05rem}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-weight:600;font-size:.95rem;margin:0 10px 10px 0;border:2px solid #fff;color:#fff}
+.btn.fill{background:var(--teal);border-color:var(--teal);color:var(--navy)}
+.btn:hover{transform:translateY(-2px)}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:10px 18px}
+.stat b{display:block;font-size:1.3rem}
+.stat span{font-size:.8rem;color:#c9d5f5}
+section{padding:56px 0 8px}
+h2{font-size:1.6rem;margin:0 0 6px;color:var(--navy)}
+h2::after{content:"";display:block;width:48px;height:4px;border-radius:4px;background:var(--teal);margin-top:6px}
+.sub{color:var(--muted);margin:10px 0 24px;max-width:40em}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 6px 18px rgba(20,40,100,.06);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(20,40,100,.12)}
+.card h3{margin:0 0 6px;font-size:1.1rem;color:var(--navy)}
+.card p{margin:0 0 12px;color:var(--muted);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.tags span,.chips span{background:#e7edfb;color:var(--indigo);border-radius:999px;padding:3px 12px;font-size:.8rem;font-weight:500}
+.card a{font-weight:600;font-size:.9rem}
+.timeline{border-left:3px solid var(--line);padding-left:22px;display:grid;gap:18px}
+.item{position:relative}
+.item::before{content:"";position:absolute;left:-30px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--teal);border:3px solid var(--bg)}
+.item h3{margin:0;font-size:1.05rem;color:var(--navy)}
+.item small{color:var(--muted)}
+.item p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:var(--card);border:1px solid var(--line);color:var(--ink);font-size:.9rem;padding:6px 16px}
+.contact{background:var(--navy);color:#fff;border-radius:20px;padding:36px;text-align:center;margin:56px 0 0}
+.contact h2{color:#fff}.contact h2::after{margin:6px auto 0}
+.contact p{color:#c9d5f5}
+.contact .btn{margin:6px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:28px 0 36px}
+@media(max-width:640px){nav ul{gap:12px}nav a{font-size:.8rem}.hero{padding:44px 0 52px}.avatar{width:110px;height:110px;font-size:2.4rem}.contact{padding:28px 18px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Hiba Shirin A</b>
+<ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="avatar" aria-hidden="true">HS</div>
+<div>
+<h1>Hi, I’m Hiba Shirin A</h1>
+<p>Third-year Computer Science student learning data science and web development, and building projects in Python, Java and HTML.</p>
+<a class="btn fill" href="#projects">View my projects</a>
+<a class="btn" href="Hiba_Shirin_A_Resume.pdf">Download resume</a>
+<div class="stats">
+<div class="stat"><b>8.33</b><span>CGPA</span></div>
+<div class="stat"><b>100+</b><span>LeetCode problems</span></div>
+<div class="stat"><b>50+</b><span>Coursera courses</span></div>
+</div></div></div></header>
+
+<main class="wrap">
+<section id="about">
+<h2>About me</h2>
+<p class="sub">I’m a third-year Computer Science student at Nehru Institute of Engineering and Technology. I’m a beginner who enjoys solving problems and learning by building projects. I’m looking for a data science or data analyst internship where I can learn from a team and work on real datasets.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<p class="sub">Things I have built while learning.</p>
+<div class="grid">
+<article class="card"><h3>Dropout Prediction</h3><p>A Python model that predicts which students are at risk of dropping out, built by analyzing student data.</p><div class="tags"><span>Python</span><span>Data analysis</span></div><a href="https://github.com/HibashirinA">View on GitHub</a></article>
+<article class="card"><h3>Student Management System</h3><p>A database-driven app with full CRUD functionality and reliable, structured data storage.</p><div class="tags"><span>MySQL</span><span>CRUD</span></div><a href="https://github.com/HibashirinA">View on GitHub</a></article>
+<article class="card"><h3>Tour Guide API</h3><p>An API that delivers structured travel recommendations, with optimized backend logic for efficient data processing.</p><div class="tags"><span>API</span><span>Backend</span></div><a href="https://github.com/HibashirinA">View on GitHub</a></article>
+<article class="card"><h3>Simple Calculator</h3><p>A calculator for basic arithmetic that handles invalid input and division by zero.</p><div class="tags"><span>Basics</span><span>Input handling</span></div><a href="https://github.com/HibashirinA">View on GitHub</a></article>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience and education</h2>
+<p class="sub">Where I have worked and studied.</p>
+<div class="timeline">
+<div class="item"><h3>Web Development Intern, InternPe</h3><small>4 weeks</small><p>Completed a web development internship, applying front-end skills to build and improve web pages.</p></div>
+<div class="item"><h3>R&amp;D Intern and Content Writer, Frazon Digital Marketing</h3><p>Contributed to research-driven development work and produced digital content.</p></div>
+<div class="item"><h3>B.E. Computer Science and Engineering</h3><small>Nehru Institute of Engineering and Technology · 2024 – 2028 · CGPA 8.33</small></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<p class="sub">Tools and subjects I work with.</p>
+<div class="chips"><span>C</span><span>C++</span><span>Python</span><span>Java</span><span>HTML</span><span>MySQL</span><span>Git</span><span>VS Code</span><span>Data Structures and Algorithms</span><span>OOP</span><span>Pandas and NumPy</span></div>
+<p class="sub" style="margin-top:20px">Problem solving: <a href="https://leetcode.com/u/hibashirin/">100+ problems solved on LeetCode</a>. Courses: NPTEL (Programming in Java, Introduction to IoT, Database Management Systems) and 50+ on Coursera.</p>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s connect</h2>
+<p>Open to internship opportunities in data science and analytics.</p>
+<a class="btn fill" href="mailto:shirinhiba3@gmail.com">Email me</a>
+<a class="btn" href="https://linkedin.com/in/hiba-shirin-5b876332a">LinkedIn</a>
+<a class="btn" href="https://github.com/HibashirinA">GitHub</a>
+<a class="btn" href="https://leetcode.com/u/hibashirin/">LeetCode</a>
+</section>
+</main>
+<footer>© 2026 Hiba Shirin A</footer>
+</body>
+</html>
